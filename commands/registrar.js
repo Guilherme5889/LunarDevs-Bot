@@ -14,7 +14,7 @@ module.exports = {
               
                 const Guilds = client.guilds.cache.map(guild => guild);
 
-                var user = await Guilds[1].members.fetch(message.author.id);
+                var user = await Guilds[0].members.fetch(message.author.id);
           
                 if(user.roles.cache.get('840763062067265556')){
                     message.author.send("Sua conta já está verificada!!")
